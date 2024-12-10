@@ -1,19 +1,3 @@
-// const data =[
-//     {
-//         "name"{
-//             "comma" : "South Geprgia",
-//             "official": "South Georgia and the South Sandwich Island"
-//             "nativename": {
-//                 "eng":{
-//                     "official":South Gerogia and the SouthSandwich Island key,
-//                     "comma": "South Georgia" 
-//                 }
-//             }
-//         }
-//     }
-// ]
-
-
 const url = "https://restcountries.com/v3.1/all";
     const element = document.getElementById("container")
 
@@ -49,5 +33,7 @@ async function fetchData(){
         
     }catch (error){
         console.log("-------error----", error.message);
+        fetchData()
     }
 }
+fetchData()
